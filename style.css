@@ -1,3 +1,7 @@
+:root {
+  --main-color: #e0e2e1;
+  --hover-color: #5a281f;
+}
 body {
   background-image: url("/one-hand-challenge-1/images/background.jpg");
 
@@ -8,20 +12,21 @@ body {
 }
 .main {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
 }
 .nav_munu {
   margin-left: 60%;
-  margin-top: 2%;
+  margin-top: 4vh;
 }
 a {
   font-family: "Rowdies", cursive;
   padding: 2%;
   text-decoration: none;
-  color: #e0e2e1;
+  color: var(--main-color);
 }
 
 .allIn {
+  padding-top: 10vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   margin: auto;
@@ -29,7 +34,7 @@ a {
 .title {
   font-family: "Rowdies", cursive;
   font-size: 500%;
-  color: #e0e2e1;
+  color: var(--main-color);
 }
 .info {
   font-family: "Patrick Hand", cursive;
@@ -37,29 +42,28 @@ a {
   text-align: center;
   margin: auto;
   width: 60%;
-  color: #e0e2e1;
+  color: var(--main-color);
 }
 .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
 }
-.more {
-}
+
 button {
   margin: 1vw;
   height: 5vh;
   width: 10vw;
   border-radius: 25px;
   border-style: solid;
-  border-color: #5a281f;
+  border-color: var(--hover-color);
   background-color: unset;
-  color: #e0e2e1;
+  color: var(--main-color);
   font-family: "Patrick Hand", cursive;
   font-weight: 600;
   font-size: 1vw;
 }
 button:hover {
-  background-color: #5a281f;
+  background-color: var(--hover-color);
   cursor: pointer;
 }
